@@ -75,7 +75,7 @@ words = selected_text.split()
 
 word_count = len(words)
 titlecase_count = sum(1 for word in words if word.istitle())
-uppercase_count = sum(1 for word in words if word.isupper())
+uppercase_count = sum(1 for word in words if word.isupper() and word.isalpha())
 lowercase_count = sum(1 for word in words if word.islower())
 number_count = sum(1 for word in words if word.isdigit())
 number_sum = sum(int(word)for word in words if word.isdigit())
